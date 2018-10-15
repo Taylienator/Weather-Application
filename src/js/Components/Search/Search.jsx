@@ -14,6 +14,7 @@ export default class Search extends React.Component {
     const { dispatch } = this.props;
     const { value } = e.target;
     dispatch(updateSearchAction(value));
+    console.log(value);
   }
 
   onButtonSearch(e){
