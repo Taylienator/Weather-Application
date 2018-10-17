@@ -10,20 +10,20 @@ export default class Search extends React.Component {
   this.presetSearch = this.presetSearch.bind(this);
   }
 
-  handleSearchInput(e){
+  handleSearchInput(e){     //function that grab input and puts it in the action
     const { dispatch } = this.props;
     const { value } = e.target;
     dispatch(updateSearchAction(value));
     console.log(value);
   }
 
-  onButtonSearch(e){
+  onButtonSearch(e){        //sends city as props to the axios call
     const { dispatch } =this.props;
     const { city } = this.props;
     dispatch(sendingSearchAction(city));
   }
 
-  presetSearch(e){
+  presetSearch(e){        //preset searches for individual buttons
     
     const { dispatch } = this.props;
     const { value } = e.target;
