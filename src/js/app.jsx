@@ -9,7 +9,7 @@ export default class App extends Component {
       <div className='container'>
         <div className='jumbotron text-center'>
           <h1>
-            Welcome to the Weather Application!
+            Welcome to the Weather Application!!
           </h1>
             <p>Know if its a good time to go for an adventure!</p>
         </div>
