@@ -11,6 +11,8 @@ import axios from 'axios';
 
  }
 
+ 
+
  export function sendingSearchAction(cityname){
     console.log('Button was pressed', cityname);
     return{

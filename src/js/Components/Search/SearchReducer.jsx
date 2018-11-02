@@ -9,22 +9,8 @@ const defaultState = {
     switch(type){
           // Here in the case of the update description action 
          
-        case 'UPDATE_SEARCH_ACTION':{
-            
-            return{
-                // with all the previous state
-                ...state,
-                 // but overwriting the description
-
-                city: payload.city
-            };
-
-        
-        }
-        case 'SENDING_SEARCH_ACTION_FULFILLED':{
-            
-            
-            return{
+        case 'UPDATE_SEARCH_ACTION':{return{...state, city: payload.city};}
+        case 'SENDING_SEARCH_ACTION_FULFILLED':{return{
             
                 ...state,
                     weatherData: payload.data.base,

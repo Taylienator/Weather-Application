@@ -35,12 +35,13 @@ export default class Search extends React.Component {
   render() {
     return (
       <div>
-        <button type="button" className="btn btn-primary" onClick={ this.presetSearch } value="San Diego">San Diego</button>
-        <button type="button" className="btn btn-primary" onClick={ this.presetSearch } value="Portland">Portland</button>
-        <button type="button" className="btn btn-primary" onClick={ this.presetSearch } value="New York">New York</button>
-        <button type="button" className="btn btn-primary" onClick={ this.presetSearch } value="Denair">Denair</button>
-        <button type="button" className="btn btn-primary" onClick={ this.presetSearch } value="Los Angeles">Los Angeles</button>
-        <button type="button" className="btn btn-primary" onClick={ this.presetSearch } value="Italy">Italy</button>
+        <ul id='test-1'>
+          <li id='test-2' value ='San Diego' onClick={this.presetSearch}>San Diego</li>
+          <li id='test-2' value ='Houston' onClick={this.presetSearch}>Houston</li>
+          <li id='test-2' value='Boston' onClick={this.presetSearch}>Boston</li>
+          <li id='test-2' Value ='New York' onClick={this.presetSearch}>New York</li>
+          <li id='test-2' value ='Los Angeles' onClick={this.presetSearch}>Los Angeles</li>
+        </ul>
         <div className="input-group mb-3">
           <input type="text" className="form-control" placeholder="Hows the weather!" id="mail" name="email" onChange={ this.handleSearchInput } />
             <div className="input-group-append">
